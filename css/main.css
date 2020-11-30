@@ -4,6 +4,7 @@ html body {
     font-family: arial,sans-serif;
     font-size: 15px;
     font-weight: 10px;
+    color: #202124;
 }
 
 *, *:before, *:after {
@@ -42,7 +43,7 @@ li {
 }
 
 main {
-    height: 100vh;
+    height: 90vh;
     display: block;
     text-align: center;
     padding-top: 177px;;
@@ -59,4 +60,64 @@ input[type=text] {
     border: 1px solid #ccc;
     font-size: 16px;
     padding: 12px 20px 12px 20px;
+}
+
+#search-option {
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+button {
+    font-size: 14px;
+    background-color: #f2f2f2;
+    color: black;
+    margin: 0 5px 0 5px;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+#lang {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 12.5px;
+}
+
+#lang1 {
+    padding: 0px 8px 0px 8px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    font-size: 10pt;
+    background-color: #f2f2f2;
+}
+
+#footer1 {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+#footer2 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+@media (max-width: 750px) {
+    #footer {
+        flex-flow: column wrap;
+    }
+
+    #footer1, #footer2 {
+        justify-content: center;
+    }
 }
