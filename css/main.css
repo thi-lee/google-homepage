@@ -1,0 +1,62 @@
+html body {
+    box-sizing: border-box;
+    height: 100%;
+    font-family: arial,sans-serif;
+    font-size: 15px;
+    font-weight: 10px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#nav-bar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px 15px 15px;
+    font-size: 90%;
+}
+
+#profile-photo {
+    border-radius: 50%;
+    width: 33px;
+}
+
+#grid-icon {
+    width: 25px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex: 1; /* I still don't understand what this is for, but I think I should still put it in. */
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li {
+    padding: 0 10px 0 5px;
+}
+
+main {
+    height: 100vh;
+    display: block;
+    text-align: center;
+    padding-top: 177px;;
+}
+
+#logo-image {
+    padding: 20px;
+}
+
+input[type=text] {
+    width: 600px;
+    margin: 8px 0;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 12px 20px 12px 20px;
+}
